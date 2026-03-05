@@ -1,7 +1,7 @@
 const photos = [
-    { name: 'IMG_0514.webp', category: 'premium', alt: 'Huse Audi A4 Piele' },
     { name: 'IMG_0519.webp', category: 'utilitare', alt: 'Huse Renault Master' },
     { name: 'IMG_0522.webp', category: 'detalii', alt: 'Detaliu cusătură dublă' },
+    { name: 'IMG_0523.webp', category: 'detalii', alt: 'Detaliu cusătură dublă' },
 ];
 
 const lightbox = GLightbox({ 
