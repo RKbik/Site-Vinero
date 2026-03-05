@@ -1,34 +1,27 @@
-// 1. THE DATA (The "Fuel")
-// Make sure these match your actual folder names exactly!
 const photos = [
     { name: 'IMG_0523.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Huse Audi A4 Piele' },
     { name: 'IMG_0519.webp', folder: 'poze_galerie/full/Audi_A4_2020/', category: 'Renault Master', alt: 'Huse Renault Master' },
     { name: 'IMG_0522.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Detalii Design', alt: 'Detaliu cusătură dublă' },
-    // Add all your other photos here following this format
 ];
 
-// 2. INITIALIZE LIGHTBOX
 const lightbox = GLightbox({ 
     selector: '.glightbox',
     touchNavigation: true,
     loop: true
 });
 
-// 3. THE ENGINE
 function renderGallery() {
     const galleryGrid = document.getElementById('vinero-gallery');
     if (!galleryGrid) return; // Exit if the div doesn't exist
     
     galleryGrid.innerHTML = ''; 
 
-    // Get unique categories
     const categories = [...new Set(photos.map(p => p.category))];
 
     categories.forEach(cat => {
         const section = document.createElement('section');
         section.className = 'car-row-section';
         
-        // Clean up ID for scroll (remove spaces)
         const scrollId = cat.replace(/\s+/g, '-').toLowerCase();
         
         section.innerHTML = `
@@ -62,7 +55,6 @@ function renderGallery() {
     }
 }
 
-// 4. SCROLL LOGIC
 function scrollRow(scrollId, direction) {
     const container = document.getElementById(`scroll-${scrollId}`);
     if (container) {
@@ -71,8 +63,7 @@ function scrollRow(scrollId, direction) {
     }
 }
 
-// 5. THE START COMMAND (The "Ignition")
-// This tells the browser: "Wait until the HTML is loaded, then run the render function."
+
 document.addEventListener('DOMContentLoaded', () => {
     renderGallery();
 });
