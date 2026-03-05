@@ -177,14 +177,24 @@ nav a {
     right: 10px;
 }
 
-/* Mobile Responsive */
-@media (max-width: 900px) { .gallery-grid { column-count: 2; } }
-@media (max-width: 500px) { .gallery-grid { column-count: 1; } }
-@media (max-width: 600px) {
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+    .car-card { 
+        flex: 0 0 260px; 
+    }
+
     .nav-btn {
         width: 32px;
         height: 32px;
         font-size: 16px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .prev { left: 5px; }
+    .next { right: 5px; }
+
+    .gallery-intro h1 {
+        font-size: 1.8rem;
     }
 }
 
