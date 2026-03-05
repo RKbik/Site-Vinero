@@ -1,3 +1,9 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -210,6 +216,19 @@ nav a {
         background: #ccc;
         border-radius: 10px;
     }
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+}
+
+.map-container {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    line-height: 0; /* Removes tiny ghost gap at the bottom */
 }
 
 .process-section {
