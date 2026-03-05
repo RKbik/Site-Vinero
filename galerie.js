@@ -4,9 +4,18 @@ const photos = [
     { name: 'IMG_0522.webp', category: 'detalii', alt: 'Detaliu cusătură dublă' },
 ];
 
+const lightbox = GLightbox({ 
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true
+});
+
 const galleryGrid = document.getElementById('vinero-gallery');
 
 function renderGallery(filter = 'all') {
+    const galleryGrid = document.getElementById('vinero-gallery');
+    if (!galleryGrid) return; // Safety check
+    
     galleryGrid.innerHTML = ''; // Clear current view
 
     photos.forEach(photo => {
@@ -29,8 +38,14 @@ function renderGallery(filter = 'all') {
 
 function filterSelection(category) {
     renderGallery(category);
-    // Add active class handling for buttons here
+    const buttons = document.querySelectorAll('.filter-btn');
+    // Remove 'active' from all
+    buttons.forEach(btn => btn.classList.remove('active'));
+    // Add 'active' to the one that was clicked
+    // This assumes your HTML buttons look like: onclick="filterSelection('premium', this)"
 }
 
 // Initial Load
-renderGallery();
+document.addEventListener('DOMContentLoaded', () => {
+    renderGallery();
+});
