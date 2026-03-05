@@ -111,8 +111,8 @@ nav a {
 
 .car-row-container {
     position: relative;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .car-row-scroll {
@@ -120,15 +120,22 @@ nav a {
     gap: 15px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none; /* Hide scrollbar for clean look */
-    scroll-behavior: smooth;
+    padding: 10px 0;
+    width: 100%;
 }
 
-.car-row-scroll::-webkit-scrollbar { display: none; }
+.car-row-scroll {
+    overscroll-behavior-x: contain;
+}
 
 .car-card {
     flex: 0 0 300px; /* Each photo stays exactly 300px wide */
     scroll-snap-align: start;
+}
+
+.car-card:last-child {
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .car-card img {
