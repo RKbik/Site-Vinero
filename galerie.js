@@ -42,10 +42,8 @@ function renderGallery() {
     <h2 class="car-row-title">${cat.toUpperCase()}</h2>
     <div class="car-row-container">
         <button class="nav-btn prev" onclick="scrollRow('${scrollId}', -1)">&#10094;</button>
-        
         <div class="car-row-scroll" id="scroll-${scrollId}">
             </div>
-        
         <button class="nav-btn next" onclick="scrollRow('${scrollId}', 1)">&#10095;</button>
     </div>
 `;
