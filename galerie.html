@@ -9,19 +9,23 @@
 <body>
     <nav>
         <a href="index.html">Acasă</a>
-        <a href="galerie.html" class="active">Galerie</a>
+        <a href="index.html#about">Despre noi</a>
         <a href="index.html#contact">Contact</a>
+        <a href="galerie.html" class="active">Galerie</a>
     </nav>
 
-    <div class="container">
-        <h1>Portofoliu Lucrări Vinero</h1>
-        <p>Explorează peste 100 de modele de huse auto create în atelierul nostru din Timișoara.</p>
-        
-        <div class="photo-grid">
-            <div class="photo-item">
-                <img src="images/huse-bmw-seria3.webp" alt="Huse auto BMW Seria 3 piele neagră" loading="lazy">
-            </div>
-            </div>
+    <div class="filter-container">
+    <button class="filter-btn active" onclick="filterSelection('all')">Toate</button>
+    <button class="filter-btn" onclick="filterSelection('premium')">Turisme</button>
+    <button class="filter-btn" onclick="filterSelection('utilitare')">Utilitare</button>
+    <button class="filter-btn" onclick="filterSelection('detalii')">Detalii</button>
+</div>
+
+<div class="gallery-grid" id="vinero-gallery">
     </div>
+
+
+
+    
 </body>
 </html>
