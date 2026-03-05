@@ -1,8 +1,8 @@
 // 1. THE DATA (The "Fuel")
 // Make sure these match your actual folder names exactly!
 const photos = [
-    { name: 'IMG_0514.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Huse Audi A4 Piele' },
-    { name: 'IMG_0519.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Renault Master', alt: 'Huse Renault Master' },
+    { name: 'IMG_0523.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Huse Audi A4 Piele' },
+    { name: 'IMG_0519.webp', folder: 'poze_galerie/full/Audi_A4_2020/', category: 'Renault Master', alt: 'Huse Renault Master' },
     { name: 'IMG_0522.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Detalii Design', alt: 'Detaliu cusătură dublă' },
     // Add all your other photos here following this format
 ];
@@ -48,7 +48,7 @@ function renderGallery() {
             item.className = 'car-card';
             item.innerHTML = `
                 <a href="${photo.folder}/${photo.name}" class="glightbox">
-                    <img src="poze_site_vinero_thumbnail/${photo.name}" alt="${photo.alt}" loading="lazy">
+                    <img src="poze_galerie/thumbnail/Audi_A4_2020/${photo.name}" alt="${photo.alt}" loading="lazy">
                 </a>
             `;
             scrollContainer.appendChild(item);
