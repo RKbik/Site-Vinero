@@ -1,0 +1,36 @@
+const photos = [
+    { name: 'IMG_0514.webp', category: 'premium', alt: 'Huse Audi A4 Piele' },
+    { name: 'IMG_0519.webp', category: 'utilitare', alt: 'Huse Renault Master' },
+    { name: 'IMG_0522.webp', category: 'detalii', alt: 'Detaliu cusătură dublă' },
+];
+
+const galleryGrid = document.getElementById('vinero-gallery');
+
+function renderGallery(filter = 'all') {
+    galleryGrid.innerHTML = ''; // Clear current view
+
+    photos.forEach(photo => {
+        if (filter === 'all' || photo.category === filter) {
+            const item = document.createElement('div');
+            item.className = `gallery-item ${photo.category}`;
+            
+            item.innerHTML = `
+                <a href="poze_site_vinero_full_1/Audi A4 2020/${photo.name}" class="glightbox">
+                    <img src="poze_site_vinero_thumbnail/${photo.name}" alt="${photo.alt}" loading="lazy">
+                    <div class="photo-overlay"><span>Vezi Detalii</span></div>
+                </a>
+            `;
+            galleryGrid.appendChild(item);
+        }
+    });
+    
+    lightbox.reload();
+}
+
+function filterSelection(category) {
+    renderGallery(category);
+    // Add active class handling for buttons here
+}
+
+// Initial Load
+renderGallery();
