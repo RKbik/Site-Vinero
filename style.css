@@ -159,18 +159,45 @@ nav a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
+@media (max-width: 850px) {
+    /* Fix Hero Grid Stretching */
+    .hero-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        margin: 10px 0 30px 0;
+    }
+
+    .hero-img {
+        height: auto; 
+        max-height: 450px; 
+        aspect-ratio: 4/3; 
+        width: 100%;
+    }
+
+    .product {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-btn {
-        display: none !important; /* Completely hides arrows on phones/tablets */
+        display: none !important;
     }
 
     .car-row-scroll {
-        padding: 10px 15px; /* Less padding since arrows are gone */
-        scroll-padding-left: 15px;
+        padding: 10px 0;
+        scroll-padding-left: 20px;
+    }
+
+    .car-row-scroll::before,
+    .car-row-scroll::after {
+        flex: 0 0 20px; 
     }
 
     .car-card {
-        flex: 0 0 85%; /* Shows a peek of the next photo for better UX */
+        flex: 0 0 85%;
     }
 }
 
@@ -185,7 +212,6 @@ nav a {
     }
 }
 
-/* PROCESS SECTION */
 .process-section {
     background-color: #2c2c2c;
     padding: 60px 0;
@@ -202,7 +228,7 @@ nav a {
     gap: 2rem; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     color: #333;
-} /* Fixed the missing brace here */
+}
 
 .product h3 {
     margin: 0 0 10px 0;
@@ -227,17 +253,6 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem 0;
-}
-
-@media (max-width: 768px) {
-    .car-row-scroll {
-        padding: 10px 0;
-        scroll-padding-left: 35px;
-    }
-    .car-row-scroll::before,
-    .car-row-scroll::after {
-        flex: 0 0 35px;
-    }
 }
 
 #about {
