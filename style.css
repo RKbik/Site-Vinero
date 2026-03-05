@@ -99,7 +99,7 @@ nav a {
 .car-row-section {
     margin-bottom: 40px;
     position: relative;
-    padding: 0 40px; /* Space for arrows */
+    padding: 0; 
 }
 
 .car-row-title {
@@ -114,15 +114,11 @@ nav a {
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 0 5px; 
 }
 
-.car-row-scroll {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 10px 0;
-    width: 100%;
+.car-row-scroll::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar for a cleaner look */
 }
 
 .car-row-scroll {
