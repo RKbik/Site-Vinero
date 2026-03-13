@@ -10,6 +10,16 @@ const photos = [
 
     { name: '74527d2c-6e79-4fce-b72b-be06507b8729.webp', folder: 'poze_galerie/full/ambulanta', category: 'Volkswagen Crafter 2025', alt: 'Husa autoutilitara ambulanta Volkswagen Crafter 2025 1'},
     { name: 'fc8efd90-acfa-4455-976e-1e4841b70525.webp', folder: 'poze_galerie/full/ambulanta', category: 'Volkswagen Crafter 2025', alt: 'Husa autoutilitara ambulanta Volkswagen Crafter 2025 2'},
+
+    { name: 'IMG_0137.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 1'},
+    { name: 'IMG_0138.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 2'},
+    { name: 'IMG_0139.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 3'},
+    { name: 'IMG_0149.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 4'},
+    { name: 'IMG_0155.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 5'},
+
+    { name: 'IMG_0693.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 1'},
+    { name: 'IMG_0700.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 2'},
+    { name: 'IMG_0702.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 3'},
     
     { name: 'IMG_0523.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Husa Audi A4 Piele 1' },
     { name: 'IMG_0519.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Husa Audi A4 Piele 2' },
@@ -28,11 +38,11 @@ const photos = [
     { name: 'IMG_8138.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 6' },
     { name: 'IMG_8139.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 7' },
 
-    { name: 'IMG_4967.webp', folder: 'poze_galerie/full/Korando_1', category: 'Korando', alt: 'Husa Korando 1'},
-    { name: 'IMG_4968.webp', folder: 'poze_galerie/full/Korando_1', category: 'Korando', alt: 'Husa Korando 2'},
-    { name: 'IMG_4969.webp', folder: 'poze_galerie/full/Korando_2', category: 'Korando', alt: 'Husa Korando 3'},
-    { name: 'IMG_4970.webp', folder: 'poze_galerie/full/Korando_2', category: 'Korando', alt: 'Husa Korando 4'},
-    { name: 'IMG_4971.webp', folder: 'poze_galerie/full/Korando_2', category: 'Korando', alt: 'Husa Korando 5'},
+    { name: 'IMG_4967.webp', folder: 'poze_galerie/full/Korando_1', category: 'SsangYong Korando', alt: 'Husa Korando 1'},
+    { name: 'IMG_4968.webp', folder: 'poze_galerie/full/Korando_1', category: 'SsangYong Korando', alt: 'Husa Korando 2'},
+    { name: 'IMG_4969.webp', folder: 'poze_galerie/full/Korando_2', category: 'SsangYong Korando', alt: 'Husa Korando 3'},
+    { name: 'IMG_4970.webp', folder: 'poze_galerie/full/Korando_2', category: 'SsangYong Korando', alt: 'Husa Korando 4'},
+    { name: 'IMG_4971.webp', folder: 'poze_galerie/full/Korando_2', category: 'SsangYong Korando', alt: 'Husa Korando 5'},
     
     { name: 'IMG_9911.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Husa Renault Captur 2020 1' },
     { name: 'IMG_9912.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Husa Renault Captur 2020 2' },
@@ -46,16 +56,6 @@ const photos = [
     { name: 'IMG_1435.webp', folder: 'poze_galerie/full/Skoda_Kamiq_2020', category: 'Skoda Kamiq 2020', alt: 'Husa Skoda Kamiq 2020 1'},
     { name: 'IMG_1437.webp', folder: 'poze_galerie/full/Skoda_Kamiq_2020', category: 'Skoda Kamiq 2020', alt: 'Husa Skoda Kamiq 2020 2'},
     { name: 'IMG_1439.webp', folder: 'poze_galerie/full/Skoda_Kamiq_2020', category: 'Skoda Kamiq 2020', alt: 'Husa Skoda Kamiq 2020 3'},
-
-    { name: 'IMG_0693.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 1'},
-    { name: 'IMG_0700.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 2'},
-    { name: 'IMG_0702.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 3'},
-
-    { name: 'IMG_0137.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 1'},
-    { name: 'IMG_0138.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 2'},
-    { name: 'IMG_0139.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 3'},
-    { name: 'IMG_0149.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 4'},
-    { name: 'IMG_0155.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 5'},
 
     { name: 'IMG_1151.webp', folder: 'poze_galerie/full/Skoda_Scala_2020', category: 'Skoda Scala 2020', alt: 'Husa Skoda Scala 2020 1'},
     { name: 'IMG_1157.webp', folder: 'poze_galerie/full/Skoda_Scala_2020', category: 'Skoda Scala 2020', alt: 'Husa Skoda Scala 2020 2'},
