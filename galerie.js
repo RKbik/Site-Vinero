@@ -1,21 +1,53 @@
 const photos = [
-    { name: 'IMG_0523.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Huse Audi A4 Piele 1' },
-    { name: 'IMG_0519.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Huse Audi A4 Piele 2' },
-    { name: 'IMG_0522.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Huse Audi A4 Piele 3' },
-    { name: 'IMG_9653.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero Logan 2020', alt: 'Dacia Sandero Logan 2020 1' },
-    { name: 'IMG_9655.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero Logan 2020', alt: 'Dacia Sandero Logan 2020 2' },
-    { name: 'IMG_9656.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero Logan 2020', alt: 'Dacia Sandero Logan 2020 3' },
-    { name: 'IMG_9657.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero Logan 2020', alt: 'Dacia Sandero Logan 2020 4' },
-    { name: 'IMG_8126.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Dacia Sandero Stepway 1' },
-    { name: 'IMG_8127.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Dacia Sandero Stepway 2' },
-    { name: 'IMG_8128.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Dacia Sandero Stepway 3' },
-    { name: 'IMG_8132.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Dacia Sandero Stepway 4' },
-    { name: 'IMG_8133.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Dacia Sandero Stepway 5' },
-    { name: 'IMG_9911.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Renault Captur 1' },
-    { name: 'IMG_9912.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Renault Captur 2' },
-    { name: 'IMG_9913.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Renault Captur 3' },
-    { name: 'IMG_9914.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Renault Captur 4' },
-    { name: 'IMG_9916.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Renault Captur 5' },
+    { name: 'IMG_6485.webp', folder: 'poze_galerie/full/Renault_Master_2024', category: 'Renault Master 2024', alt: 'Husa Autoutilitara Renault Master 2024 1'},
+    { name: 'IMG_6486.webp', folder: 'poze_galerie/full/Renault_Master_2024', category: 'Renault Master 2024', alt: 'Husa Autoutilitara Renault Master 2024 2'},
+    { name: 'IMG_6493.webp', folder: 'poze_galerie/full/Renault_Master_2024', category: 'Renault Master 2024', alt: 'Husa Autoutilitara Renault Master 2024 3'},
+
+    { name: 'IMG_8639.webp', folder: 'poze_galerie/full/Renault_Master_2025', category: 'Renault Master 2025', alt: 'Husa Autoutilitara Renault Master 2025 1'},
+    { name: 'IMG_8640.webp', folder: 'poze_galerie/full/Renault_Master_2025', category: 'Renault Master 2025', alt: 'Husa Autoutilitara Renault Master 2025 2'},
+    { name: 'IMG_8642.webp', folder: 'poze_galerie/full/Renault_Master_2025', category: 'Renault Master 2025', alt: 'Husa Autoutilitara Renault Master 2025 3'},
+    { name: 'IMG_8643.webp', folder: 'poze_galerie/full/Renault_Master_2025', category: 'Renault Master 2025', alt: 'Husa Autoutilitara Renault Master 2025 4'},
+    
+    { name: 'IMG_0523.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Husa Audi A4 Piele 1' },
+    { name: 'IMG_0519.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Husa Audi A4 Piele 2' },
+    { name: 'IMG_0522.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Husa Audi A4 Piele 3' },
+    
+    { name: 'IMG_9651.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero / Logan 2020', alt: 'Husa Dacia Sandero Logan 2020 1' },
+    { name: 'IMG_9655.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero / Logan 2020', alt: 'Husa Dacia Sandero Logan 2020 2' },
+    { name: 'IMG_9656.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero / Logan 2020', alt: 'Husa Dacia Sandero Logan 2020 3' },
+    { name: 'IMG_9657.webp', folder: 'poze_galerie/full/Dacia_Sandero_Logan_2020', category: 'Dacia Sandero / Logan 2020', alt: 'Husa Dacia Sandero Logan 2020 4' },
+    
+    { name: 'IMG_8126.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 1' },
+    { name: 'IMG_8127.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 2' },
+    { name: 'IMG_8128.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 3' },
+    { name: 'IMG_8132.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 4' },
+    { name: 'IMG_8133.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 5' },
+    { name: 'IMG_8138.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 6' },
+    { name: 'IMG_8139.webp', folder: 'poze_galerie/full/Dacia_Sandero_Stepway', category: 'Dacia Sandero Stepway', alt: 'Husa Dacia Sandero Stepway 7' },
+
+    { name: 'IMG_4967.webp', folder: 'poze_galerie/full/Korando_1', category: 'Korando', alt: 'Husa Korando 1'},
+    { name: 'IMG_4968.webp', folder: 'poze_galerie/full/Korando_1', category: 'Korando', alt: 'Husa Korando 2'},
+    { name: 'IMG_4969.webp', folder: 'poze_galerie/full/Korando_2', category: 'Korando', alt: 'Husa Korando 3'},
+    { name: 'IMG_4970.webp', folder: 'poze_galerie/full/Korando_2', category: 'Korando', alt: 'Husa Korando 4'},
+    { name: 'IMG_4971.webp', folder: 'poze_galerie/full/Korando_2', category: 'Korando', alt: 'Husa Korando 5'},
+    
+    { name: 'IMG_9911.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Husa Renault Captur 2020 1' },
+    { name: 'IMG_9912.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Husa Renault Captur 2020 2' },
+    { name: 'IMG_9913.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Husa Renault Captur 2020 3' },
+    { name: 'IMG_9916.webp', folder: 'poze_galerie/full/Renault_Captur_2020', category: 'Renault Captur 2020', alt: 'Husa Renault Captur 2020 4' },
+
+    { name: 'image1.webp', folder: 'poze_galerie/full/SSANGYONG_TIVOLI', category: 'SsangYong Tivoli', alt: 'Husa SsangYong Tivoli 1'},
+    { name: 'image2.webp', folder: 'poze_galerie/full/SSANGYONG_TIVOLI', category: 'SsangYong Tivoli', alt: 'Husa SsangYong Tivoli 2'},
+    { name: 'image3.webp', folder: 'poze_galerie/full/SSANGYONG_TIVOLI', category: 'SsangYong Tivoli', alt: 'Husa SsangYong Tivoli 3'},
+
+    { name: 'IMG_1435.webp', folder: 'poze_galerie/full/Skoda_Kamiq_2020', category: 'Skoda Kamiq 2020', alt: 'Husa Skoda Kamiq 2020 1'},
+    { name: 'IMG_1437.webp', folder: 'poze_galerie/full/Skoda_Kamiq_2020', category: 'Skoda Kamiq 2020', alt: 'Husa Skoda Kamiq 2020 2'},
+    { name: 'IMG_1439.webp', folder: 'poze_galerie/full/Skoda_Kamiq_2020', category: 'Skoda Kamiq 2020', alt: 'Husa Skoda Kamiq 2020 3'},
+
+    { name: 'IMG_0693.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 1'},
+    { name: 'IMG_0700.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 2'},
+    { name: 'IMG_0702.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 3'},
+    
 ];
 
 const lightbox = GLightbox({ 
