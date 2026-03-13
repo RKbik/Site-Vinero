@@ -70,11 +70,11 @@ const photos = [
     { name: 'IMG_9926.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 6'},
 
 
-    { name: 'IMG_8939.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 1'},
-    { name: 'IMG_8940.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 2'},
-    { name: 'IMG_8942.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 3'},
-    { name: 'IMG_8944.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 4'},
-    { name: 'IMG_8945.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 5'},
+    { name: 'IMG_8939.webp', folder: 'poze_galerie/full/Suzuki_Vitara', category: 'Suzuki Vitara', alt: 'Husa Suzuki Vitara 1'},
+    { name: 'IMG_8940.webp', folder: 'poze_galerie/full/Suzuki_Vitara', category: 'Suzuki Vitara', alt: 'Husa Suzuki Vitara 2'},
+    { name: 'IMG_8942.webp', folder: 'poze_galerie/full/Suzuki_Vitara', category: 'Suzuki Vitara', alt: 'Husa Suzuki Vitara 3'},
+    { name: 'IMG_8944.webp', folder: 'poze_galerie/full/Suzuki_Vitara', category: 'Suzuki Vitara', alt: 'Husa Suzuki Vitara 4'},
+    { name: 'IMG_8945.webp', folder: 'poze_galerie/full/Suzuki_Vitara', category: 'Suzuki Vitara', alt: 'Husa Suzuki Vitara 5'},
 
 
 
