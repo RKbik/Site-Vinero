@@ -7,6 +7,9 @@ const photos = [
     { name: 'IMG_8640.webp', folder: 'poze_galerie/full/Renault_Master_2025', category: 'Renault Master 2025', alt: 'Husa Autoutilitara Renault Master 2025 2'},
     { name: 'IMG_8642.webp', folder: 'poze_galerie/full/Renault_Master_2025', category: 'Renault Master 2025', alt: 'Husa Autoutilitara Renault Master 2025 3'},
     { name: 'IMG_8643.webp', folder: 'poze_galerie/full/Renault_Master_2025', category: 'Renault Master 2025', alt: 'Husa Autoutilitara Renault Master 2025 4'},
+
+    { name: '74527d2c-6e79-4fce-b72b-be06507b8729.webp', folder: 'poze_galerie/full/ambulanta', category: 'Volkswagen Crafter 2025', alt: 'Husa autoutilitara ambulanta Volkswagen Crafter 2025 1'},
+    { name: 'fc8efd90-acfa-4455-976e-1e4841b70525.webp', folder: 'poze_galerie/full/ambulanta', category: 'Volkswagen Crafter 2025', alt: 'Husa autoutilitara ambulanta Volkswagen Crafter 2025 2'},
     
     { name: 'IMG_0523.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Husa Audi A4 Piele 1' },
     { name: 'IMG_0519.webp', folder: 'poze_galerie/full/Audi_A4_2020', category: 'Audi A4 2020', alt: 'Husa Audi A4 Piele 2' },
@@ -47,7 +50,34 @@ const photos = [
     { name: 'IMG_0693.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 1'},
     { name: 'IMG_0700.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 2'},
     { name: 'IMG_0702.webp', folder: 'poze_galerie/full/Skoda_Kamiq_Active_2020', category: 'Skoda Kamiq Active 2020', alt: 'Husa Skoda Kamiq Active 2020 3'},
-    
+
+    { name: 'IMG_0137.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 1'},
+    { name: 'IMG_0138.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 2'},
+    { name: 'IMG_0139.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 3'},
+    { name: 'IMG_0149.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 4'},
+    { name: 'IMG_0155.webp', folder: 'poze_galerie/full/Skoda_Octavia_4', category: 'Skoda Octavia IV', alt: 'Husa Skoda Octavia IV 5'},
+
+    { name: 'IMG_1151.webp', folder: 'poze_galerie/full/Skoda_Scala_2020', category: 'Skoda Scala 2020', alt: 'Husa Skoda Scala 2020 1'},
+    { name: 'IMG_1157.webp', folder: 'poze_galerie/full/Skoda_Scala_2020', category: 'Skoda Scala 2020', alt: 'Husa Skoda Scala 2020 2'},
+    { name: 'IMG_1159.webp', folder: 'poze_galerie/full/Skoda_Scala_2020', category: 'Skoda Scala 2020', alt: 'Husa Skoda Scala 2020 3'},
+    { name: 'IMG_1182.webp', folder: 'poze_galerie/full/Skoda_Scala_2020', category: 'Skoda Scala 2020', alt: 'Husa Skoda Scala 2020 4'},
+
+    { name: 'IMG_9918.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 1'},
+    { name: 'IMG_9921.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 2'},
+    { name: 'IMG_9922.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 3'},
+    { name: 'IMG_9923.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 4'},
+    { name: 'IMG_9924.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 5'},
+    { name: 'IMG_9926.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 6'},
+
+
+    { name: 'IMG_8939.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 1'},
+    { name: 'IMG_8940.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 2'},
+    { name: 'IMG_8942.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 3'},
+    { name: 'IMG_8944.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 4'},
+    { name: 'IMG_8945.webp', folder: 'poze_galerie/full/Suzuki_S-Cross', category: 'Suzuki S-Cross', alt: 'Husa Suzuki S-Cross 5'},
+
+
+
 ];
 
 const lightbox = GLightbox({ 
